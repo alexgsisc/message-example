@@ -19,3 +19,11 @@ add global pipes in the main
 Create Dto 
 nest g cl messages/dtos/createMessageDto -
 -flat --no-spec
+
+create file 
+-- docker-compose.yaml 
+for run db in docker
+
+execute command by run db in docker background 
+
+--- docker-compose up -d
