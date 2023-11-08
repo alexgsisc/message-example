@@ -1,10 +1,21 @@
 create project 
 nest new name-project
+
 create modulo
 -- nest g module messages
+
 create controller en la misma carpeta --flat
 --nest g controller messages/messages --flat
+
 install validator and transformer 
 yarn 
 --yarn add class-validator class-transformer
 
+add global pipes in the main 
+    app.useGlobalPipes(
+        new ValidationPipe()
+    );
+
+Create Dto 
+nest g cl messages/dtos/createMessageDto -
+-flat --no-spec
